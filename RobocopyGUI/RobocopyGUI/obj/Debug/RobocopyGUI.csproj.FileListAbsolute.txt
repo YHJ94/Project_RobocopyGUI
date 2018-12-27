@@ -1,0 +1,11 @@
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\bin\Debug\RobocopyGUI.exe.config
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\bin\Debug\RobocopyGUI.exe
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\bin\Debug\RobocopyGUI.pdb
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.csprojAssemblyReference.cache
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.MainForm.resources
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.PathDirection.resources
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.Properties.Resources.resources
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.csproj.GenerateResource.cache
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.csproj.CoreCompileInputs.cache
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.exe
+D:\Project\RobocopyGUI\RobocopyGUI\RobocopyGUI\obj\Debug\RobocopyGUI.pdb

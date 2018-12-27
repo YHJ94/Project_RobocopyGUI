@@ -1,0 +1,4 @@
+------20181228--------
+1. Set basic layout of MainForm
+2. Created user control which determines the path of source and destination files
+3. Created some class to make actual command.
