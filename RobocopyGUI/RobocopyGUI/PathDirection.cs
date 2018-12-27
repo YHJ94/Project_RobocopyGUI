@@ -31,6 +31,16 @@ namespace RobocopyGUI
 
         private void run_button_Click(object sender, EventArgs e)
         {
+            ComOption test = new ComOption();
+
+            test.AddSwitch("/E");
+            test.AddSwitch("/DCOPY:T");
+
+            MessageBox.Show(test.GetOption());
+
+            test.removeSwitch("/E");
+
+            MessageBox.Show(test.GetOption());
         }
     }
 }

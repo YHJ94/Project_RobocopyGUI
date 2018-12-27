@@ -31,5 +31,10 @@ namespace RobocopyGUI
         {
             optCom.Replace(_switch, "");
         }
+
+        public string GetOption()
+        {
+            return optCom.ToString();
+        }
     }
 }

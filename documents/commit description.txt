@@ -2,3 +2,7 @@
 1. Set basic layout of MainForm
 2. Created user control which determines the path of source and destination files
 3. Created some class to make actual command.
+
+-----20181228(2)------
+1. Add some codes to test building option command
+2. This commit is to test the 'git push & pull' 
