@@ -7,34 +7,36 @@ using System.IO;
 
 namespace RobocopyGUI
 {
-    class ComOption
+    class ComOption : Command
     {
-        private StringBuilder optCom;
-        private ComOption comOpt;
+        private StringBuilder comStr;
+        private Command comOpt;
 
         public ComOption()
         {
-            optCom = new StringBuilder();
+            comStr = new StringBuilder();
         }
 
-        public void AddOption(ComOption addComOpt)
+        public void AddOption(Command ComOpt)
         {
-            comOpt = addComOpt;
+            this.comOpt = ComOpt;
         }
 
         public void AddSwitch(string _switch)
         {
-            optCom.AppendFormat(" {0}", _switch);
+            comStr.AppendFormat(" {0}", _switch);
         }
 
         public void removeSwitch(string _switch)
         {
-            optCom.Replace(_switch, "");
+            comStr.Replace(_switch, "");
         }
 
-        public string GetOption()
+        public override StringBuilder BuildCommand()
         {
-            return optCom.ToString();
+            StringBuilder sb = comOpt.BuildCommand();
+            sb.Append(comStr);
+            return sb;
         }
     }
 }

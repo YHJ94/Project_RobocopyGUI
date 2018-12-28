@@ -7,23 +7,19 @@ using System.IO;
 
 namespace RobocopyGUI
 {
-    class ManCommand
+    class MainCommand : Command
     {
         private StringBuilder mCom;
-        private ComOption opt;
 
-        public ManCommand()
+        public MainCommand(string line)
         {
             mCom = new StringBuilder();
+            mCom.Append(line);
         }
 
-        public StringBuilder MCom
+        public override StringBuilder BuildCommand()
         {
-            get
-            {
-                return mCom;
-            }
+            return mCom;
         }
-
     }
 }

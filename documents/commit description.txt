@@ -6,3 +6,8 @@
 -----20181228(2)------
 1. Add some codes to test building option command
 2. This commit is to test the 'git push & pull' 
+
+-----20181228(3)------
+1. Created abstract class 'Command'
+2. Applied decorator pattern to build full command.
+3. Test code inserted in PathDirection.cs. Delete it later.

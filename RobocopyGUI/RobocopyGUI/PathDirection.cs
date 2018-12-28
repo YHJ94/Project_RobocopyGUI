@@ -18,7 +18,7 @@ namespace RobocopyGUI
         }
 
         private void srcBrowse_button_Click(object sender, EventArgs e)
-        {            
+        {
             folderBrowserDialog1.ShowDialog();
             srcPath_textBox.Text = folderBrowserDialog1.SelectedPath.ToString();
         }
@@ -31,16 +31,21 @@ namespace RobocopyGUI
 
         private void run_button_Click(object sender, EventArgs e)
         {
-            ComOption test = new ComOption();
+            MainCommand robocopy = new MainCommand("robocopy ");
+            ComOption copyOption = new ComOption();
+            ComOption excOption = new ComOption();
+            ComOption logOption = new ComOption();
 
-            test.AddSwitch("/E");
-            test.AddSwitch("/DCOPY:T");
+            copyOption.AddSwitch("/E /DCOPY:T /MIR");
+            excOption.AddSwitch("/XF : F: ");
+            logOption.AddSwitch("/NFL /DTS ");
 
-            MessageBox.Show(test.GetOption());
+            copyOption.AddOption(robocopy);
+            excOption.AddOption(copyOption);
+            logOption.AddOption(excOption);
 
-            test.removeSwitch("/E");
+            MessageBox.Show(logOption.BuildCommand().ToString());
 
-            MessageBox.Show(test.GetOption());
         }
     }
 }
